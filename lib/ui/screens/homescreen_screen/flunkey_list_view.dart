@@ -7,8 +7,8 @@ import 'package:android_lyrics_player/utils/constants/strings.dart';
 
 import '../../widgets/dipslay_snackbar.dart';
 
-class SongListView extends StatelessWidget {
-  SongListView(this.model, {super.key});
+class ProductListView extends StatelessWidget {
+  ProductListView(this.model, {super.key});
 
   final List<ProductModel>? model;
   String quantity = "1";

@@ -150,7 +150,7 @@ class _ProductListState extends State<ProductListScreen> {
                             .where((i) => i.pcategory == _value)
                             .toList();
                       }
-                      return SongListView(filteredList);
+                      return ProductListView(filteredList);
                     } else if (state is slb.SongErrorState) {
                       return showMessageView(message: "Something Went wrong!");
                     } else {
