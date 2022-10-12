@@ -1,0 +1,66 @@
+[
+  {
+    "p_name": "Apple",
+    "p_id": 1,
+    "p_cost": 30,
+    "p_availability": 1,
+    "p_details": "Imported from Swiss",
+    "p_category": "Premium",
+    "p_quantity": "1"
+  },
+  {
+    "p_name": "Mango",
+    "p_id": 2,
+    "p_cost": 50,
+    "p_availability": 1,
+    "p_details": "Farmed at Selam",
+    "p_category": "Tamilnadu",
+    "p_quantity": "1"
+  },
+  {
+    "p_name": "Bananna",
+    "p_id": 3,
+    "p_cost": 5,
+    "p_availability": 0,
+    "p_details": "Hazipur ka banana",
+    "p_category": "General",
+    "p_quantity": "1"
+  },
+  {
+    "p_name": "Orange",
+    "p_id": 4,
+    "p_cost": 25,
+    "p_availability": 1,
+    "p_details": "from Nagpur",
+    "p_category": "Premium",
+    "p_quantity": "1"
+  },
+  {
+    "p_name": "Pineapple",
+    "p_id": 5,
+    "p_cost": 45,
+    "p_availability": 10,
+    "p_details": "from Mumbai",
+    "p_category": "General",
+    "p_quantity": "1"
+  },
+  {
+    "p_name": "Dragon Fruit",
+    "p_id": 6,
+    "p_cost": 120,
+    "p_availability": 12,
+    "p_details": "England Imported",
+    "p_category": "Premium",
+    "p_quantity": "1"
+  },
+  {
+    "p_name": "Pomegranate",
+    "p_id": 7,
+    "p_cost": 210,
+    "p_availability": 19,
+    "p_details": "Red fresh Pomegranate",
+    "p_category": "General",
+    "p_quantity": "1"
+  }
+
+]

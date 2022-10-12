@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "57114582140",
+    "firebase_url": "https://lyricsplayer-79acc-default-rtdb.firebaseio.com",
+    "project_id": "lyricsplayer-79acc",
+    "storage_bucket": "lyricsplayer-79acc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57114582140:android:9ae4f193323489f57afdf9",
+        "android_client_info": {
+          "package_name": "com.example.android_lyrics_player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57114582140-dcmuuabbd6vn6upc5lclj4la1hr75rn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxQP_AhQRE7ElNAvJeD4I9MeFQ6kO3KOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57114582140-dcmuuabbd6vn6upc5lclj4la1hr75rn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
