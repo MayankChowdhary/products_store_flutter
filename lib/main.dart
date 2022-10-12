@@ -17,31 +17,27 @@ import 'data/repositories/flunkey_repository.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  /* await Firebase.initializeApp();
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  bool? isLogged = prefs.getBool("login");
-  print("login:" + isLogged.toString());*/
   Strings.jsonDb = await rootBundle.loadString('assets/product_db.json');
   runApp(MyApp(
     appRouter: AppRouter(),
     initialRoute: '/',
     connectivity: Connectivity(),
     key: null,
-    songRepository: ProductRepository(),
+    productRepository: ProductRepository(),
   ));
 }
 
 class MyApp extends StatelessWidget {
   final AppRouter appRouter;
   final Connectivity connectivity;
-  final ProductRepository songRepository;
+  final ProductRepository productRepository;
   final String initialRoute;
 
   const MyApp({
     Key? key,
     required this.appRouter,
     required this.connectivity,
-    required this.songRepository,
+    required this.productRepository,
     required this.initialRoute,
   }) : super(key: key);
 
@@ -54,10 +50,10 @@ class MyApp extends StatelessWidget {
               InternetCubit(connectivity: connectivity),
         ),
         BlocProvider<slb.SongBloc>(
-            create: (songBlocContext) => slb.SongBloc(songRepository)),
+            create: (songBlocContext) => slb.SongBloc(productRepository)),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Product Demo',
         initialRoute: this.initialRoute,
         theme: ThemeData(
           primarySwatch: Colors.blue,

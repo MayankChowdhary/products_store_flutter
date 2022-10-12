@@ -14,16 +14,16 @@ import '../../../controller/bloc/flunkey_list_bloc/flunkey_list_bloc.dart'
     as slb;
 import 'flunkey_list_view.dart';
 
-class SongDetailScreen extends StatefulWidget {
-  static const routeName = Strings.songDetailsRoute;
+class ProductListScreen extends StatefulWidget {
+  static const routeName = Strings.homeScreenRoute;
 
-  SongDetailScreen({Key? key}) : super(key: key);
+  ProductListScreen({Key? key}) : super(key: key);
 
   @override
-  _SongDetailsState createState() => _SongDetailsState();
+  _ProductListState createState() => _ProductListState();
 }
 
-class _SongDetailsState extends State<SongDetailScreen> {
+class _ProductListState extends State<ProductListScreen> {
   String? _value = 'ALL';
   late List<DropdownMenuItem<String>> menuItems = [];
 
