@@ -40,7 +40,7 @@ class ProductListView extends StatelessWidget {
                         width: 100,
                       ),
                       Container(
-                        width: 210,
+                        width: 180,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           //Center Column contents vertically,
@@ -71,7 +71,7 @@ class ProductListView extends StatelessWidget {
                               alignment: Alignment.centerLeft,
                               child: Text(
                                   "Price: ${model?[index].pcost} ₹" +
-                                      "    Available: ${model?[index].pavailability}",
+                                      "  Available: ${model?[index].pavailability}",
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
                                       fontSize: 16,
@@ -81,12 +81,12 @@ class ProductListView extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
+                        padding: const EdgeInsets.only(left: 10.0),
                         child: Align(
                           alignment: Alignment.centerRight,
                           child: SizedBox(
-                            height: 60.0,
-                            width: 60.0,
+                            height: 50.0,
+                            width: 50.0,
                             child: TextField(
                               keyboardType: TextInputType.number,
                               inputFormatters: <TextInputFormatter>[
@@ -101,11 +101,11 @@ class ProductListView extends StatelessWidget {
                               },
                               decoration: InputDecoration(
                                 border: InputBorder.none,
-                                labelText: 'Quantity',
+                                labelText: 'Qty',
                               ),
                               style: TextStyle(
                                   fontSize: 18.0,
-                                  height: 2.0,
+                                  height: 1.0,
                                   color: Colors.black),
                             ),
                           ),

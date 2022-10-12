@@ -64,9 +64,9 @@ class _ProductListState extends State<ProductListScreen> {
         centerTitle: true,
         title: Row(
           children: [
-            Text("        Products"),
+            Text("    Products"),
             Padding(
-              padding: const EdgeInsets.only(left: 70.0),
+              padding: const EdgeInsets.only(left: 50.0),
               child: new Theme(
                 child: new DropdownButtonHideUnderline(
                   child: new DropdownButton<String>(
@@ -152,9 +152,9 @@ class _ProductListState extends State<ProductListScreen> {
                       }
                       return ProductListView(filteredList);
                     } else if (state is slb.SongErrorState) {
-                      return showMessageView(message: "Something Went wrong!");
+                      return showMessageView(message: "Loading Products...");
                     } else {
-                      return showMessageView();
+                      return showMessageView(message: "Loading Products...");
                     }
                   },
                 ),
@@ -165,7 +165,7 @@ class _ProductListState extends State<ProductListScreen> {
         } else if (state is InternetDisconnected) {
           return showMessageView(message: "No Internet Available");
         } else {
-          return showMessageView();
+          return showMessageView(message: "Loading Products...");
         }
       }),
     );
