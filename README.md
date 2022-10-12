@@ -1,6 +1,6 @@
-# android_lyrics_player
+# Products Store
 
-A music player in android with lyrics.
+A Product list screen in flutter
 
 ## Getting Started
 
