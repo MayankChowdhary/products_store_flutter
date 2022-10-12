@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:android_lyrics_player/data/models/flunkey_model.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:android_lyrics_player/utils/constants/strings.dart';
@@ -34,10 +35,13 @@ class ProductListView extends StatelessWidget {
                   margin: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      Image.network(
-                        model?[index].imageUrl ?? '',
+
+                      CachedNetworkImage(
                         height: 100,
                         width: 100,
+                        imageUrl:  model?[index].imageUrl ?? '',
+                        placeholder: (context, url) => new CircularProgressIndicator(),
+                        errorWidget: (context, url, error) => new Icon(Icons.error),
                       ),
                       Container(
                         width: 180,

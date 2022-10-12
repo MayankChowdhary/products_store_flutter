@@ -25,8 +25,12 @@ class ProductListScreen extends StatefulWidget {
 
 class _ProductListState extends State<ProductListScreen> {
   String? _value = 'ALL';
-  late List<DropdownMenuItem<String>> menuItems = [];
-
+   List<DropdownMenuItem<String>> menuItems = [
+    new DropdownMenuItem(
+      child: new Text("All Category"),
+      value: "ALL",
+    )
+  ];
 
   void addDropDownItems(List<ProductModel> model) {
     menuItems.clear();

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android_lyrics_player">
    <application
-        android:label="Flunkey Task"
+        android:label="Product Store"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
