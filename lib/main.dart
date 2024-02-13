@@ -1,5 +1,5 @@
-import 'dart:ffi';
 
+import 'package:android_lyrics_player/ui/screens/homescreen_screen/home_screen.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +10,7 @@ import 'package:android_lyrics_player/utils/constants/strings.dart';
 
 import 'controller/bloc/flunkey_list_bloc/flunkey_list_bloc.dart' as slb;
 import 'controller/cubit/internet_cubit.dart';
-import 'controller/debug/app_bloc_observer.dart';
 import 'core/router/app_router.dart';
-import 'core/themes/app_theme.dart';
 import 'data/repositories/flunkey_repository.dart';
 
 Future<void> main() async {
@@ -54,7 +52,8 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Product Demo',
-        initialRoute: this.initialRoute,
+        //initialRoute: this.initialRoute,
+        home: ProductListScreen(key: this.key),
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,

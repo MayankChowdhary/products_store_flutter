@@ -36,7 +36,7 @@ class _MessageDialogState extends State<MessageDialog> {
             ),
           ),
           actions: [
-            new FlatButton(
+            new ElevatedButton(
               child: new Text('Ok'),
               onPressed: () {
                 Navigator.of(context).pop();

@@ -6,9 +6,6 @@ import '../../utils/constants/strings.dart';
 import '../../core/exceptions/route_exception.dart';
 
 class AppRouter {
-  AppRouter();
-
-  const AppRouter._();
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     final args = settings.arguments as ScreenArguments;

@@ -1,4 +1,3 @@
-import 'dart:collection';
 
 import 'package:android_lyrics_player/data/models/flunkey_model.dart';
 import 'package:flutter/material.dart';
